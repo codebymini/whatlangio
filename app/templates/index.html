@@ -12,7 +12,7 @@
 <body>
 <h1 class="whatlang-header">whatlang?</h1>
 <div class="container">
-    
+    <img class="paste_code_here" src="{{ url_for('static',filename='resources/pastecode.png') }}">
     <form action="/answer" method="POST">
         <label for="codeInput"></label>
         <textarea enabled rows="30" cols="80" name="codepaste" id="codeInput" class="textarea"></textarea>
