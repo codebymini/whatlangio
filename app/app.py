@@ -1,5 +1,9 @@
 from flask import Flask, redirect, url_for, render_template, request
 import os
+from guesslang import Guess
+
+guess = Guess()
+
 
 app = Flask(__name__)
 
@@ -11,7 +15,9 @@ def hello_world():
 def answer():
     if request.method == 'POST':
         data = request.form
-        return render_template("answer.html", data=data)
+        #language = data.get('codepaste')
+        language = guess.language_name(data.get('codepaste'))
+        return render_template("answer.html", language=language)
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))

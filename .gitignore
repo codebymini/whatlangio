@@ -1,4 +1,4 @@
 rob/
 __pycache__/
 .mypy_cache/
-.DStore/
+.DS_Store/
