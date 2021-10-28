@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+    <title>whatlang?</title>
+</head>
+
+<body>
+<h1 class="whatlang-header">whatlang?</h1>
+<div class="container">
+    
+    <form action="/answer" method="POST">
+        <label for="codeInput"></label>
+        <textarea enabled rows="30" cols="80" name="codepaste_area" id="codeInput" class="textarea"></textarea>
+
+        <div class="button_div">
+            <button class="button" type="submit" value ="Submit"><span>run -></span></button>
+        </div>
+    </form>
+</div>
+</body>
+
+</html>
