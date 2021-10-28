@@ -1,1 +1,1 @@
-web: python main.py $PORT --timeout 90
+web: python app/app.py $PORT --timeout 90

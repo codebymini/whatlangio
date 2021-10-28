@@ -1,18 +1,20 @@
-FROM python:3.8
+FROM python:3.8-slim-buster
 
 #Set the working directory
-WORKDIR /
+WORKDIR /app
 
 #copy all the files
-COPY . .
+COPY requirements.txt .
 
 #Install the dependencies
-RUN apt-get -y update
-RUN apt-get update && apt-get install -y python3 python3-pip
-RUN pip3 install -r requirements.txt
+#RUN apt-get -y update
+#RUN apt-get update && apt-get install -y python3 python3-pip
+RUN pip install -r requirements.txt
+
+ADD . /app 
 
 #Expose the required port
 EXPOSE 5000
 
 #Run the command
-CMD ["python", "app.py"]
+CMD ["python", "app/app.py"]
