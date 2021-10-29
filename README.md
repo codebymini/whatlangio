@@ -2,9 +2,9 @@
 
 ## Links
 
-- [Repo](https://github.com/ascoolarobban/whatlang_v2> "<project-name> Repo")
+- [Repo](https://github.com/CodeByMini/whatlangio> "<project-name> whatlang?")
 
-- [Bugs](https://github.com/ascoolarobban/whatlang_v2>/issues "Issues Page")
+- [Bugs](https://github.com/CodeByMini/whatlangio>/issues "Issues Page")
 
 
 
