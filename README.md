@@ -20,8 +20,8 @@
 
 ## Author
 
-- [Robin Ellingsen](https://github.com/ascoolarobban "Robin Ellingsen")
 - [Daniel Mini](https://github.com/codebymini "Daniel Mini")
+- [Robin Ellingsen](https://github.com/ascoolarobban "Robin Ellingsen")
 - [Vincent Palma](https://github.com/avipami "Vincent Palma")
 
 
