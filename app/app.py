@@ -4,7 +4,6 @@ from guesslang import Guess
 
 guess = Guess()
 
-
 app = Flask(__name__)
 
 @app.route('/')
