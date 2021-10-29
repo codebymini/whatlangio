@@ -17,6 +17,10 @@
 - HTML
 - CSS
 
+<img src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/c/c.png" height="30">
+<img src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png" height="30">
+<img src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png" height="30">
+<img src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/css/css.png" height="30">
 
 ## Author
 
@@ -25,10 +29,6 @@
 - [Vincent Palma](https://github.com/avipami "Vincent Palma")
 
 
-<img src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/c/c.png" height="30">
-<img src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png" height="30">
-<img src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png" height="30">
-<img src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/css/css.png" height="30">
 
 
 
