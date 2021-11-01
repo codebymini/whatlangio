@@ -5,13 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
     <title>whatlang?</title>
 </head>
 
 <body>
-<h1 class="whatlang-header">whatlang?</h1>
-<div class="container">
+    <h1 class="whatlang-header">whatlang?</h1>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+    <script src="main.js"></script>
+    <!--CHARTS!-->
+    <canvas id="chart" height="400" width="400"></canvas>
+
+
+
+    <div class="container">
     <h1>{{language}}</h1>
 </div>
 </body>
