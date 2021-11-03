@@ -1,21 +1,37 @@
 const CHART = document.getElementById("chart");
 console.log(CHART);
 
-let chart = new Chart(CHART, {
-    type: 'doughnut',
+
+var options = {
+    elements: {
+        arc: {
+            borderWidth: 0,
+            borderColor:'#ffffff',
+
+        }
+    }
+};
+
+const chart = new Chart(CHART, {
+    type: 'bar',
+    options: options,
     data: {
-        labels:['Ruby', 'Python','Javascript','R'],
+        labels:['Ruby','Python','Javascript','R'],
         datasets: [{
-            label: 'My First Dataset',
+            label: 'Top',
             backgroundColor: [
-                'rgb(99,255,242)',
-                'rgb(54,235,157)',
-                'rgb(156,255,86)',
-                'rgb(41,45,53)',
+                'rgb(255,222,60)',
+                'rgb(255,126,60)',
+                'rgb(255,74,57)',
+                'rgb(255,0,221)',
             ],
-            data: [30, 11, 4,12],
-            hoverOffset: 4,}
+            data: [3.2, 11, 4,12],
+            hoverOffset: 14,}
+
         ]
+
+
 }
+
 });
 
