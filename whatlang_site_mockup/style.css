@@ -19,7 +19,7 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    background: rgb(12, 37, 46);
+    background: rgb(66,84,101);
     font-family: "Archivo Black", sans-serif;
     overflow-y: scroll;
 
@@ -356,9 +356,10 @@ a:hover {
         stroke-dashoffset: 401;
     }
 }
-/* END Keyframes for the initial animation */
+
+
 
 body {
-    background-color: #222;
+    background-color:rgb(66,84,101);
 }
 

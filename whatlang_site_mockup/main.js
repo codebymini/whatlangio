@@ -18,14 +18,14 @@ const chart = new Chart(CHART, {
     data: {
         labels:['Ruby','Python','Javascript','R'],
         datasets: [{
-            label: 'Top',
+            label: 'Top %',
             backgroundColor: [
                 'rgb(255,222,60)',
                 'rgb(255,126,60)',
                 'rgb(255,74,57)',
                 'rgb(255,0,221)',
             ],
-            data: [3.2, 11, 4,12],
+            data: [3.3, 11, 4,12],
             hoverOffset: 14,}
 
         ]
