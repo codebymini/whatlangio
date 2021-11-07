@@ -19,7 +19,7 @@
 <body>
 <ul>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <li><img id="home" src="{{ url_for('static',filename='resources/Frame.png') }}"></li>
+    <li><a href="/"><img id="home" src="{{ url_for('static',filename='resources/Frame.png') }}"></a></li>
     <li style="float:right"><a href="/about">About</a></li>
 
     <!--    <li style="float:right"><a class="active" href="#about">About</a></li>-->
@@ -34,7 +34,7 @@
 
 </div>
     <div>
-        <!-- <img class="node"  src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png"> -->
+        <img class="node"  src="{{ url_for('static',filename='programming_logos/')}}{{language}}.png">
     </div>
         <!--CHART!-->
     <div>

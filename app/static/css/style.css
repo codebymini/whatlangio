@@ -31,6 +31,8 @@ textarea {
     max-height: 40rem;
     min-width: 30rem;
     min-height: 30rem;
+    resize: none;
+    background-color: rgb(218, 220, 223);
 }
 
 .container {
