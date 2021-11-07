@@ -14,9 +14,7 @@ def hello_world():
 def answer():
     if request.method == 'POST':
         listprobabilities = []
-        #listprobabilitiesname = []
         data = request.form
-        #language = data.get('codepaste')
         language = guess.language_name(data.get('codepaste'))
         probabilities = guess.probabilities(data.get('codepaste'))
         if probabilities != None:
@@ -26,11 +24,7 @@ def answer():
                 templist =[]
                 templist.append(tuple[0])
                 templist.append(tuple[1])
-                listprobabilities.append(templist)
-            #for tuple in enumerate(probabilities):
-	        #    listprobabilitiesname.append(tuple[0])
-            #        listprobabilities.append(tuple[1])
-	        
+                listprobabilities.append(templist)   
             
             return render_template("answer.html", language=language, listprobabilities=listprobabilities)
         return render_template("answer.html")
