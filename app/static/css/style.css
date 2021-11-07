@@ -117,27 +117,6 @@ textarea {
     top: 10rem;
 }
 
-a {
-    font-family: "poppins", sans-serif;
-    font-size: 35px;
-    padding: 20px;
-    margin: 20px;
-    text-decoration: none;
-    text-align: center;
-    color: var(--color-white);
-    transition: var(--speed-normal);
-    border: 1px solid var(--color-red);
-    text-transform: uppercase;
-}
-
-a:hover {
-    border: 1px solid transparent;
-    background: var(--color-red) url(https://i.postimg.cc/wBXGXbWN/pixel.png);
-    transition-delay: 0.8s;
-    background-size: 200px;
-    animation: animate var(--speed-fast) steps(8) forwards;
-    border-radius: 5px;
-}
 
 @keyframes animate {
     0% {
@@ -355,6 +334,39 @@ a:hover {
     to {
         stroke-dashoffset: 401;
     }
+}
+
+#home {
+    width: 46px;
+    height: 44px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+ul {
+    display: block;
+    position: fixed;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: transparent;
 }
 
 
