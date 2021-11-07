@@ -11,7 +11,19 @@
 </head>
 
 <body>
+<ul>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <a href="/">
+        <li><img id="home" src="{{ url_for('static',filename='resources/Frame.png') }}"></li>
+    </a>
+    <li style="float:right"><a href="/about">About</a></li>
+    <li style="float:right"><a href="https://github.com/CodeByMini/whatlangio" target="_blank">GitHub</a><i class="fa fa-fw fa-contact"></i></li>
+
+    <!--    <li style="float:right"><a class="active" href="#about">About</a></li>-->
+</ul>
+
 <h1 class="whatlang-header">whatlang?</h1>
+
 <div class="container">
     <img class="paste_code_here" src="{{ url_for('static',filename='resources/pastecode.png') }}">
     <form action="/answer" method="POST">
