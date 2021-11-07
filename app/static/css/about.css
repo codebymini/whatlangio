@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+.header {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
+}
+
+
+body {
+    background-color: rgb(66,84,101);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+#home {
+    width: 46px;
+    height: 44px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+ul {
+    display: block;
+    position: fixed;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.heads {
+    /*margin: auto;*/
+    /*position: fixed;*/
+
+}
+.container {
+    height: 300px;
+    width: auto;
+    margin: 10px auto;
+    position: center;
+    text-align: center;
+    display: flex
+}
+.column {
+    padding: 5px;
+    flex: 33.33%;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.logo{
+    margin-top: 5em;
+
+
+
+}
+.about_text{
+    font: 14px "Roboto";
+}
+.about_b{
+    font: 12px "Roboto Thin", sans-serif;
+}
