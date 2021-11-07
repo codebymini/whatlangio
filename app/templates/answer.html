@@ -17,19 +17,24 @@
 
 
 <body>
+<ul>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <li><a href="/"><img id="home" src="{{ url_for('static',filename='resources/Frame.png') }}"></a></li>
+    <li style="float:right"><a href="/about">About</a></li>
 
-
+    <!--    <li style="float:right"><a class="active" href="#about">About</a></li>-->
+</ul>
     <!--<h1 class="whatlang-header">whatlang?</h1>-->
     <div align = 'center' class="container">
     <h1 class="whatlang-header">{{language}}</h1>
     <script src="{{ url_for('static',filename='scripts/jquery.js') }}" data="{{listprobabilities}}" id="chartdata"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
-
+</ul>
 
 
 </div>
     <div>
-        <!-- <img class="node"  src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png"> -->
+        <img class="node"  src="{{ url_for('static',filename='programming_logos/')}}{{language}}.png">
     </div>
         <!--CHART!-->
     <div>

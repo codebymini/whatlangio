@@ -10,13 +10,16 @@ app = Flask(__name__)
 def hello_world():
     return render_template("index.html")
 
+@app.route('/about')
+def about():
+    return render_template("about.html")
+
+
 @app.route('/answer', methods = ['POST'])
 def answer():
     if request.method == 'POST':
         listprobabilities = []
-        #listprobabilitiesname = []
         data = request.form
-        #language = data.get('codepaste')
         language = guess.language_name(data.get('codepaste'))
         probabilities = guess.probabilities(data.get('codepaste'))
         if probabilities != None:
@@ -26,11 +29,7 @@ def answer():
                 templist =[]
                 templist.append(tuple[0])
                 templist.append(tuple[1])
-                listprobabilities.append(templist)
-            #for tuple in enumerate(probabilities):
-	        #    listprobabilitiesname.append(tuple[0])
-            #        listprobabilities.append(tuple[1])
-	        
+                listprobabilities.append(templist)   
             
             return render_template("answer.html", language=language, listprobabilities=listprobabilities)
         return render_template("answer.html")
