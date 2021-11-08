@@ -21,21 +21,27 @@
     <li style="float:right"><a href="https://github.com/CodeByMini/whatlangio" target="_blank">GitHub</a><i class="fa fa-fw fa-contact"></i></li>
 
     <!--    <li style="float:right"><a class="active" href="#about">About</a></li>-->
-</ul>
+    </ul>
 
-<h1 class="whatlang-header">whatlang?</h1>
+    <h1 class="whatlang-header">whatlang?</h1>
 
-<div class="container">
-    <img class="paste_code_here" src="static/resources/pastecode.png">
-    <form action="/answer" method="POST">
-        <label for="codeInput"></label>
-        <textarea enabled rows="30" cols="80" name="codepaste" id="codeInput" class="textarea"></textarea>
-
-        <div class="button_div">
-            <button class="button" type="submit" value ="Submit"><span>run -></span></button>
+    
+    <div class="flex-container">
+    <div class="paste_code_here_div">
+        <img class="paste_code_here" src="static/resources/pastecode.png">
+    </div>
+        <div>
+            <form action="/answer" method="POST">
+                <label for="codeInput"></label>
+                <textarea enabled rows="30" cols="80" name="codepaste" id="codeInput" class="textarea"></textarea>
         </div>
-    </form>
-</div>
+    </div>
+        <div class="flex-container">
+            <div class="button_div">
+                <button class="button" type="submit" value ="Submit"><span>run -></span></button>
+            </div>
+            </form>
+    </div>
 </body>
 
 </html>

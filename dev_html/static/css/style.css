@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
     --color-red: #ec1840;
@@ -14,37 +15,72 @@
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
+    display: inline-block;
+    width: 100%;
     background: rgb(66,84,101);
     font-family: "Archivo Black", sans-serif;
     overflow-y: scroll;
 
 }
+h1 {
+    color: white;
+    text-align: center;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  
+.flex-container > div {
+    text-align: center;
+    line-height: 75px;
+    align-items: center;
+}
+
 
 textarea {
+    
+    display:block;
     border-radius: 1px;
-    max-width: 60rem;
-    max-height: 40rem;
-    min-width: 30rem;
-    min-height: 30rem;
+    height: 75%;
+    width: 100%;
     resize: none;
     background-color: rgb(218, 220, 223);
 }
+.about_text{
+    font: 14px "Roboto";
+}
+.about_b{
+    font: 12px "Roboto Thin", sans-serif;
+}
+.paste_code_here {
+    position: absolute;
+    right: 70%;
+    width: 100px;
+    top: 120px;
+    width: auto;
+    height:60px;
+}
+
+
+
+@media only screen and (max-width: 1362px) {
+    .paste_code_here {
+        display:none;
+    }
+}
 
 .container {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    width:100%;
+    margin:auto;
 }
 
 .button_div {
     margin: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: block;
+    margin:auto;
 }
 
 .button {
@@ -55,6 +91,7 @@ textarea {
     text-align: center;
     font-size: 28px;
     padding: 10px;
+    margin: auto;
     width: 200px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.5s;
@@ -70,25 +107,22 @@ textarea {
 
 .button span:after {
     content: '()';
-    position: absolute;
     opacity: 0;
-    top: 0;
     right: -20px;
     transition: 0.5s;
 }
 
 .button:hover span {
-    padding-right: 25px;
+    padding-right: 0px;
 }
 
 .button:hover span:after {
     opacity: 1;
-    right: 0;
 }
 
 .button:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    margin: 8px 10px 12px;
+    margin: 0px 0px 0px;
 }
 
 .button {
@@ -109,14 +143,6 @@ textarea {
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-}
-
-.paste_code_here {
-    width: 200px;
-    height: auto;
-    position: relative;
-    left: -15rem;
-    top: 10rem;
 }
 
 
