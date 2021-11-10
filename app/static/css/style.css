@@ -27,17 +27,18 @@ body {
 
 textarea {
     border-radius: 1px;
-    max-width: 60rem;
-    max-height: 40rem;
-    min-width: 30rem;
-    min-height: 30rem;
+    max-width: 95%;
+    /*max-height: 40rem;*/
+    /*min-width: 30rem;*/
+    /*min-height: 30rem;*/
     resize: none;
     background-color: rgb(218, 220, 223);
 
 }
 
-.container {
 
+.container {
+    width: 100%;
     display: flex;
     flex-direction: column;
 
@@ -106,7 +107,7 @@ textarea {
     font-weight: normal;
     font-size: 6em;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
     background-image: linear-gradient(45deg, #f3ec78, #af4261);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -118,7 +119,7 @@ textarea {
     width: 200px;
     height: auto;
     position: relative;
-    left: -15rem;
+    left: -30rem;
     top: 10rem;
 }
 
