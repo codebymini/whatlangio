@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="The whatlang project">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel= "stylesheet" type= "text/css" href= "static/css/style.css">
+    <title>whatlang?</title>
+</head>
+
+
+<body>
+<ul>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <li><a href="/"><img id="home" src="static/resources/Frame.png"></a></li>
+    <li style="float:right"><a href="/about">About</a></li>
+
+    <!--    <li style="float:right"><a class="active" href="#about">About</a></li>-->
+</ul>
+    <!--<h1 class="whatlang-header">whatlang?</h1>-->
+    <div align = 'center' class="container">
+    <h1 class="whatlang-header">python</h1>
+    <script src="{{ url_for('static',filename='scripts/jquery.js') }}" data="listprobabilities" id="chartdata"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+</ul>
+
+
+</div>
+    <div>
+        <img class="node"  src="static/programming_logos/python.png">
+    </div>
+        <!--CHART!-->
+    <div>
+        <br>
+        <br>
+        <canvas id="chart" height="300" width="300"></canvas>
+        <script src="{{ url_for('static',filename='scripts/main.js') }}" data="language" id="chartdata"></script>
+
+    </div>
+
+
+</body>
+
+
+</html>
