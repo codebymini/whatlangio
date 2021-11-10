@@ -19,7 +19,6 @@ body {
     width: 100%;
     background: rgb(66,84,101);
     font-family: "Archivo Black", sans-serif;
-    overflow-y: scroll;
 
 }
 h1 {
@@ -62,12 +61,33 @@ textarea {
     width: auto;
     height:60px;
 }
+@media only screen and (max-width: 702px) {
+    .whatlang-header {
+        font-size: 2em;
+    }
+    textarea {
+        width: 80%;
+    }
+}
 
+@media only screen and (max-width: 1639px) {
+    .flex-container {
+        display: inline-block;
+      }
 
-
-@media only screen and (max-width: 1362px) {
     .paste_code_here {
         display:none;
+    }
+    textarea {
+        display:inline-block;
+        border-radius: 1px;
+        height: 75%;
+        width: 100%;
+        resize: none;
+        background-color: rgb(218, 220, 223);
+    }
+    .whatlang-header {
+        font-size: 3em;
     }
 }
 

@@ -69,6 +69,17 @@ textarea {
     .paste_code_here {
         display:none;
     }
+    textarea {
+        display:inline-block;
+        border-radius: 1px;
+        height: 75%;
+        width: 100%;
+        resize: none;
+        background-color: rgb(218, 220, 223);
+    }
+    .whatlang-header {
+        font-size: 3em;
+    }
 }
 
 .container {
